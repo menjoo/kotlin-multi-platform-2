@@ -12,9 +12,9 @@ This project includes three parts:
    
  The multiplatform library will include three subprojects:
 
- * `common` - contains a common logic for both applications;
- * `ios` - contains an iOS-specific code;
- * `android` - contains an Android-specific code.
+ * `common` - contains a common logic for both applications
+ * `ios` - contains an iOS-specific code
+ * `android` - contains an Android-specific code
  
  ```
      application/
