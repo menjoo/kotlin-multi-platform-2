@@ -1,0 +1,7 @@
+include ':app'
+include ':core:common'
+include ':core:android'
+
+project(':core').projectDir = file('../core')
+project(':core:common').projectDir = file('../core/common')
+project(':core:android').projectDir = file('../core/android')
