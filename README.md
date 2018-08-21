@@ -16,6 +16,7 @@ This project includes three parts:
  * `ios` - contains an iOS-specific code;
  * `android` - contains an Android-specific code.
  
+ ```
      application/
     ├── androidApp/
     ├── iosApp/
@@ -23,3 +24,4 @@ This project includes three parts:
         ├── common/
         ├── android/
         └── ios/
+```
