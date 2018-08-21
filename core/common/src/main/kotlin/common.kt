@@ -6,5 +6,5 @@ expect class Platform() {
 }
 
 class Greeting {
-    fun greeting(): String = "Hello, ${Platform().platform} from Kotlin!"
+    fun greeting(): String = "Hello, ${Platform().platform} from shared Kotlin code!"
 }

@@ -1,11 +1,11 @@
 package com.menno.androidapp
 
-import android.support.v4.app.Fragment
 import android.os.Bundle
-import android.util.Log
+import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import org.core.Greeting
 
 /**
@@ -15,7 +15,11 @@ class MainActivityFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
-        Log.d(javaClass.canonicalName, Greeting().greeting())
         return inflater.inflate(R.layout.fragment_main, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        view.findViewById<TextView>(R.id.label).text = Greeting().greeting()
     }
 }
