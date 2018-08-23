@@ -1,5 +1,4 @@
-// core/common/src/main/kotlin/common.kt
-package org.core
+package org.core.hello
 
 expect class Platform() {
     val platform: String

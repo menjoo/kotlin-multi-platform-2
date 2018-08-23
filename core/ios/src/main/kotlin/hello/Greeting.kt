@@ -1,5 +1,4 @@
-// core/ios/src/main/kotlin/ios.kt
-package org.core
+package org.core.hello
 
 actual class Platform actual constructor() {
     actual val platform: String = "iOS"
