@@ -1,6 +1,8 @@
 # Kotlin Multi-Platform
 
-## Structure
+## Minimal project to show Kotlin-Native with Android and iOS
+
+### Structure
 
 This project includes three parts:
 
