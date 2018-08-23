@@ -4,12 +4,14 @@ buildscript {
     ext.kotlin_version = '1.2.60'
 
     repositories {
+        google()
         jcenter()
         maven { url "https://dl.bintray.com/jetbrains/kotlin-native-dependencies" }
     }
 
     // Specify all the plugins used as dependencies
     dependencies {
+        classpath 'com.android.tools.build:gradle:3.1.4'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         classpath "org.jetbrains.kotlin:kotlin-native-gradle-plugin:0.7"
 
@@ -19,6 +21,11 @@ buildscript {
 // Set up compilation dependency repositories for all projects.
 subprojects {
     repositories {
+        google()
         jcenter()
     }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
 }

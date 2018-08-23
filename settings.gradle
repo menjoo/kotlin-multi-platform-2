@@ -1,3 +1,4 @@
+include ':androidApp'
 include ':core'
 include ':core:common'
 include ':core:android'
