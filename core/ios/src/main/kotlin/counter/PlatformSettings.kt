@@ -15,6 +15,5 @@ actual class PlatformSettings public constructor(private val delegate: NSUserDef
 
     actual override fun putInt(key: String, value: Int): Unit = delegate.setInteger(value.toLong(), key)
 
-    actual override fun getInt(key: String, defaultValue: Int): Int =
-            if (hasKey(key)) delegate.integerForKey(key).toInt() else defaultValue
+    actual override fun getInt(key: String, defaultValue: Int): Int = delegate.integerForKey(key).toInt()
 }
